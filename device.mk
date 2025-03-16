@@ -20,3 +20,6 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 33
