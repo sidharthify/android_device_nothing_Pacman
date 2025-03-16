@@ -23,3 +23,8 @@ PRODUCT_PACKAGES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
+
+# Init
+PRODUCT_PACKAGES += \
+    init.mt6886.rc \
+    fstab.mt6886
