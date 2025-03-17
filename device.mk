@@ -92,8 +92,9 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    device/nothing/Pacman \
     hardware/mediatek \
-    $(DEVICE_PATH)
+    hardware/nothing
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -162,4 +163,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
