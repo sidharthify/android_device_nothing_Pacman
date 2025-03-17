@@ -97,6 +97,14 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     $(DEVICE_PATH)
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhardware \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder.vendor \
+    libhwbinder
+
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -147,7 +155,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6886:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6886
 
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -156,3 +163,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
