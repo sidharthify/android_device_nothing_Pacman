@@ -85,12 +85,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-# Boot control
+# Boot Control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-mtkimpl.recovery
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
+    com.android.hardware.boot \
+    android.hardware.boot-service.default_recovery
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
