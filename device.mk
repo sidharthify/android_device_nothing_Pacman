@@ -46,6 +46,9 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
+# Dynamic Partition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
