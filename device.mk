@@ -118,7 +118,8 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 # Init
 PRODUCT_PACKAGES += \
     init.mt6886.rc \
-    fstab.mt6886
+    fstab.mt6886 \
+    init.recovery.mt6886.rc
 
 # Linker
 PRODUCT_COPY_FILES += \
