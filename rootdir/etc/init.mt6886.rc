@@ -5,11 +5,28 @@ on init
     # Custom overrides that need to happen right on boot
     # Override vendor fstab
     # We only need it to be overridden before things are mounted
-    mount none /system/etc/fstab.mt6765 /vendor/etc/fstab.mt6765 bind
+    mount none /system/etc/fstab.mt6886 /vendor/etc/fstab.mt6886 bind
 
 on post-fs
     # Unmount the overridden fstab because the SELinux label is incorrect
     # and some MTK daemons can crash because of that
     # (at post-fs, the fstab has already been used to mount the partitions,
     #  so it is fine to just revert back)
-    umount /vendor/etc/fstab.mt6765
+    umount /vendor/etc/fstab.mt6886
+
+ # Include logger service
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on post-fs-data
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+
+on property:sys.boot_completed=1
+    # Stop the logger service
+    stop logger
