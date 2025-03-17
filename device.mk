@@ -57,3 +57,7 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_PACKAGES += \
     init.mt6886.rc \
     fstab.mt6886
+
+# Linker
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
