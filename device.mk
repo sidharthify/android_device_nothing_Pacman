@@ -85,6 +85,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor
+
+PRODUCT_PACKAGES += \
+    libbluetooth_audio_session
+
 # Boot Control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
