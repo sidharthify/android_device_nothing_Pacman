@@ -88,3 +88,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/power,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6886:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6886
