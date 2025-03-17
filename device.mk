@@ -163,3 +163,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Kernel
+TARGET_PREBUILT_KERNEL := device/nothing/Pacman/prebuilt/kernel
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
