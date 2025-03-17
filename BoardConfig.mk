@@ -25,6 +25,10 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 # Platform
 TARGET_BOARD_PLATFORM := mt6886
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := Pacman
 TARGET_NO_BOOTLOADER := true
