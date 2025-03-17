@@ -18,8 +18,8 @@
 
 set -e
 
-export DEVICE=r1
-export VENDOR=rabbit
+export DEVICE=Pacman
+export VENDOR=nothing
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
