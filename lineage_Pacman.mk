@@ -23,8 +23,10 @@ PRODUCT_MANUFACTURER := Nothing
 
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="Pacman 13 TP1A.220624.014 2409232135 release-keys"
+# Device Codename
+DEVICE_CODENAME := Pacman
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Nothing/Pacman/Pacman:13/TP1A.220624.014/2409232135:user/release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="Pacman 13 TP1A.220624.014 2409232135 release-keys" \
+    BuildFingerprint=Nothing/Pacman/Pacman:13/TP1A.220624.014/2409232135:user/release-keys \
+    DeviceProduct=$(DEVICE_CODENAME)
