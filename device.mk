@@ -200,5 +200,11 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/nothing/Pacman/prebuilt/kernel
+
+PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.cfg \
+    init.mtkgki.rc
+
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
