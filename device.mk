@@ -128,6 +128,11 @@ PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Filesystem table
+PRODUCT_PACKAGES += \
+    fstab.mt6886 \
+    fstab.mt6886.vendor_ramdisk
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
