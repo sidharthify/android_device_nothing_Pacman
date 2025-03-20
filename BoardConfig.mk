@@ -19,6 +19,7 @@ IGNORE_PREFER32_ON_DEVICE := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6886
+BOARD_HAS_MTK_HARDWARE := true
 
 # Properties
 TARGET_SYSTEM_PROP += device/nothing/Pacman/configs/properties/system.prop
