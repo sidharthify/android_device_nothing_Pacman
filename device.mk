@@ -141,6 +141,10 @@ PRODUCT_PACKAGES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# Script
+PRODUCT_PACKAGES += \
+    stnfc_nt.sh
+
 # Init
 PRODUCT_PACKAGES += \
     init.cgroup.rc \
