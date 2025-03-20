@@ -120,6 +120,10 @@ PRODUCT_PACKAGES += \
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Super
+BOARD_BUILD_SUPER_IMAGE_BY_DEFAULT := true
+PRODUCT_BUILD_SUPER_PARTITION := true
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
