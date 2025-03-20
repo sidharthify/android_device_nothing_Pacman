@@ -129,9 +129,16 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Init
 PRODUCT_PACKAGES += \
+    init.cgroup.rc \
+    init.connectivity.rc \
+    init.modem.rc \
     init.mt6886.rc \
-    fstab.mt6886 \
-    init.recovery.mt6886.rc
+    init.mt6886.usb.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    init.stnfc.rc \
+    stnfc_nt.rc \
+    ueventd.mt6886.rc
 
 # Linker
 PRODUCT_COPY_FILES += \
@@ -166,7 +173,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6886:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6886
+    $(DEVICE_PATH)/rootdir/fstab.mt6886:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6886
 
 # Update engine
 PRODUCT_PACKAGES += \

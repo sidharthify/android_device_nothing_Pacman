@@ -155,3 +155,4 @@ system_dlkm /system_dlkm ext4 ro wait,slotselect,avb,logical,first_stage_mount
 /dev/block/by-name/nt_log /mnt/product/nt_log ext4 noatime,nosuid,nodev,discard,barrier=1 wait,check,formattable,first_stage_mount,nofail
 /dev/block/by-name/nt_log /mnt/vendor/nt_log ext4 noatime,nosuid,nodev,discard,barrier=1 wait,check,formattable,first_stage_mount,nofail
 
+

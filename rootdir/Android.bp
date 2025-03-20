@@ -1,0 +1,107 @@
+
+// Filesystem table
+prebuilt_etc {
+    name: "fstab.mt6886",
+    src: "fstab.mt6886",
+    vendor: true,
+    vendor_ramdisk_available: true
+}
+
+// Kernel
+prebuilt_etc {
+    name: "init.mtkgki.rc",
+    src: "init.mtkgki.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.insmod.cfg",
+    src: "init.insmod.cfg",
+    vendor: true
+}
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "init.insmod.sh",
+    vendor: true
+}
+
+
+// Init
+prebuilt_etc {
+    name: "init.cgroup.rc",
+    src: "init.cgroup.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "init.connectivity.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "init.modem.rc",
+    src: "init.modem.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "init.mt6886.rc",
+    src: "init.mt6886.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "init.mt6886.usb.rc",
+    src: "init.mt6886.usb.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "init.project.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "init.sensor_2_0.rc",
+    src: "init.sensor_2_0.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "init.stnfc.rc",
+    src: "init.stnfc.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "stnfc_nt.rc",
+    src: "stnfc_nt.rc",
+    vendor: true,
+    sub_dir: "init/hw"
+}
+
+prebuilt_etc {
+    name: "ueventd.mt6886.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.mt6886.rc",
+    vendor: true,
+}
+
+// Scripts
+sh_binary {
+    name: "stnfc_nt.sh",
+    src: "stnfc_nt.sh",
+    vendor: true
+}
