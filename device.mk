@@ -128,6 +128,11 @@ PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
