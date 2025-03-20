@@ -208,3 +208,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor \
+    libkeymint.vendor \
+    libpuresoftkeymasterdevice.vendor
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/nothing/Pacman/Pacman-vendor.mk)
