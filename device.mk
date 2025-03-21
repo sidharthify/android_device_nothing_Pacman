@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 33
+PRODUCT_SHIPPING_API_LEVEL := 35
 
 # Script
 PRODUCT_PACKAGES += \
