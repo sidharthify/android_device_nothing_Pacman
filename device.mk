@@ -170,8 +170,8 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_2_0.rc \
     init.stnfc.rc \
-    stnfc_nt.rc \
-    ueventd.mt6886.rc
+    ueventd.mt6886.rc \
+    init.recovery.mt6886
 
 # Linker
 PRODUCT_COPY_FILES += \
