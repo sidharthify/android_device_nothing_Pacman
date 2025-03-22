@@ -229,14 +229,14 @@ PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
 
 # Keymaster
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor \
     libkeymaster_portable.vendor \
     libkeymint.vendor \
     libpuresoftkeymasterdevice.vendor
 
 # Keymint
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
