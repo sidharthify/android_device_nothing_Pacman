@@ -118,6 +118,11 @@ PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
 
+# Displayconfig
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/configs/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml
+
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/nothing/Pacman \
