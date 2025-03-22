@@ -226,7 +226,7 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/nothing/Pacman/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/nothing/Pacman-kernel/kernel
 
 PRODUCT_PACKAGES += \
     init.insmod.sh \
