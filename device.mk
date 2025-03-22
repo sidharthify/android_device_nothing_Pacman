@@ -168,6 +168,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.mt6886 \
+    fstab.mt6886.vendor_ramdisk \
     init.cgroup.rc \
     init.connectivity.rc \
     init.modem.rc \
