@@ -343,6 +343,11 @@ ro.vendor.mtk_f2fs_enable=1
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_trustonic_tee_support=1
 
+# Keymint
+ro.apk_verity.mode=1
+ro.mtk_key_manager_support=1
+ro.vendor.mtk_trustonic_tee_support=1
+
 # Thermal
 ro.vendor.mtk_thermal_2_0=1
 
