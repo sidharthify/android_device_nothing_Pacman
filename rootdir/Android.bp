@@ -27,6 +27,13 @@ sh_binary {
     vendor: true
 }
 
+// Recovery
+prebuilt_etc {
+    name: "init.recovery.mt6886.rc",
+    src: "init.recovery.mt6886.rc",
+    recovery: true,
+    sub_dir: "init"
+}
 
 // Init
 prebuilt_etc {
