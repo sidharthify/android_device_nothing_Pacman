@@ -151,7 +151,8 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper-V1-ndk.vendor
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 35
